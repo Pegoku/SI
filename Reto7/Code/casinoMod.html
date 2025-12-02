@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0 Transitional//EN">
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+</HEAD>
+ 
+<BODY>
+    <h1>¿Puedes ganarme?</h1>
+    <script>
+        var face1=new Image()
+        face1.src="img/dado1.png"
+        var face2=new Image()
+        face2.src="img/dado2.png"
+        var face3=new Image()
+        face3.src="img/dado3.png"
+        var face4=new Image()
+        face4.src="img/dado4.png"
+        var face5=new Image()
+        face5.src="img/dado5.png"
+        var face6=new Image()
+        face6.src="img/dado6.png"
+    </script>
+ 
+ 
+    <img src="" name="dado0">
+    <img src="" name="dado1">
+    <img src="" name="dado2">
+    <img src="" name="dado3">
+    <img src="" name="dado4">
+    <img src="" name="dado5">
+
+ 
+    <form>
+    	<input type="button" value="Lanzar dado" onClick="lanzar()">
+
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+ 
+    <script>
+
+    function lanzar()
+    {
+        var value0=valor_tirada()
+        document.images["dado0"].src=eval("face"+value0+".src");
+	var value1=valor_tirada() 
+	document.images["dado1"].src=eval("face"+value1+".src");
+	var value2=valor_tirada()  
+	document.images["dado2"].src=eval("face"+value2+".src");
+        var value3=valor_tirada2() // 6 will never happen
+        document.images["dado3"].src=eval("face"+value3+".src");
+	var value4=valor_tirada() 
+	document.images["dado4"].src=eval("face"+value4+".src");
+	var value5=valor_tirada()
+	document.images["dado5"].src=eval("face"+value5+".src");
+	flag(value0,value1,value2,value3,value4,value5)
+
+	
+    }
+    function flag(value0,value1,value2,value3,value4,value5){
+	var encrypted="U2FsdGVkX19OItKZytLrhPlc6g27gWcJiuBQkKySzlxl1XK1yWw2DQ3TiPZZSTzcQzYyhpA3ODnOg5e97W+Uvg=="
+	value0 = 5;
+	value1 = 3;
+	value2 = 4;
+	value3 = 6;
+	value4 = 1;
+	value5 = 2;
+		
+	var pass=""+value0.toString()+""+value1.toString()+""+value2.toString()+""+value3.toString()+""+value4.toString()+""+value5.toString();
+										var flag = CryptoJS.AES.decrypt(encrypted, pass);
+										alert(hex2a(flag));
+		
+		if (value0 > 0 && value1 > 0 && value2 > 0 && value3 > 0 && value4 > 0 && value5 > 0){
+		if (value0 < 7 && value1 < 7 && value2 < 7 && value3 < 7 && value4 < 7 && value5 < 7){
+			if (value2 % 2 == 0 && value3 % 2 ==0){
+				if (value0 % 2 != 0 && value4 % 2 != 0){
+					if (value3/value5==3){
+						if (value2==4){
+							if (value4+value1==value2){
+								if (value1==3){
+									if (value3-value4==value0){
+										var pass=""+value0.toString()+""+value1.toString()+""+value2.toString()+""+value3.toString()+""+value4.toString()+""+value5.toString();
+										var flag = CryptoJS.AES.decrypt(encrypted, pass);
+										alert(hex2a(flag));
+									}
+
+								}
+
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	} 
+
+    }
+    
+
+    function valor_tirada(){
+	return Math.floor(Math.random() * 6) + 1;
+    }
+    function valor_tirada2(){
+	return Math.floor(Math.random() * 5) + 1; // 6 will never happen
+    }
+
+    function hex2a(hexx) {
+    	var hex = hexx.toString();
+    	var str = '';
+    	for (var i = 0; (i < hex.length && hex.substr(i, 2) !== '00'); i += 2)
+       		str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    	return str;
+    }
+
+
+    </script>
+
+ 
+</BODY>
+</HTML>
