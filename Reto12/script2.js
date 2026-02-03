@@ -37,7 +37,7 @@ var arrEncStr = [
   "\u004E\u006F\u0020\u0061\u0075\u0074\u006F\u0072\u0069\u007A\u0061\u0064\u006F",
   "\u0070\u006F\u0077\u0064\u0065\u0072\u0062\u006C\u0075\u0065",
 ];
-var arrStr = [
+var arrStr2 = [
 83,
 126,
 116,
@@ -76,32 +76,32 @@ var arrStr = [
 "No autorizado",
 "powderblue"
 ]
-arrStr.forEach( (e) => console.log(e))
+arrStr2.forEach( (e) => console.log(e))
 function check() {
   var arrSortedEncStr = [
-    arrStr[0],
-    arrStr[1],
-    arrStr[2],
-    arrStr[3],
-    arrStr[4],
-    arrStr[5],
-    arrStr[4],
-    arrStr[6],
-    arrStr[7],
-    arrStr[8],
-    arrStr[9],
-    arrStr[0],
-    arrStr[7],
-    arrStr[10],
-    arrStr[7],
-    arrStr[6],
-    arrStr[11],
-    arrStr[12],
-    arrStr[3],
-    arrStr[13],
-    arrStr[14],
-    arrStr[15],
-    arrStr[15],
+    arrStr2[0],
+    arrStr2[1],
+    arrStr2[2],
+    arrStr2[3],
+    arrStr2[4],
+    arrStr2[5],
+    arrStr2[4],
+    arrStr2[6],
+    arrStr2[7],
+    arrStr2[8],
+    arrStr2[9],
+    arrStr2[0],
+    arrStr2[7],
+    arrStr2[10],
+    arrStr2[7],
+    arrStr2[6],
+    arrStr2[11],
+    arrStr2[12],
+    arrStr2[3],
+    arrStr2[13],
+    arrStr2[14],
+    arrStr2[15],
+    arrStr2[15],
   ];
   var user = document.getElementById("user").value;
   console.log(user);
@@ -120,9 +120,9 @@ function check() {
       5 &&
     user == String.fromCharCode(97, 100, 109, 105, 110)
   ) {
-    document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[29];
-    document.getElementById(arrStr[28])[arrStr[30]] = arrStr[31];
-    document.getElementById(arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[29];
+    document.getElementById(arrStr2[28])[arrStr2[27]][arrStr2[26]] = arrStr2[29];
+    document.getElementById(arrStr2[28])[arrStr2[30]] = arrStr2[31];
+    document.getElementById(arrStr2[32])[arrStr2[27]][arrStr2[26]] = arrStr2[29];
     var charSumMod = charSum % 7;
     document.getElementById("rest").innerHTML = 
     
@@ -176,9 +176,9 @@ function check() {
       arrSortedEncStr[22] - charSumMod,
   );
   } else {
-    document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[34];
-    document.getElementById(arrStr[28])[arrStr[30]] = arrStr[35];
-    document.getElementById(arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[36];
-    document.getElementById(arrStr[33])[arrStr[30]] = arrStr[20];
+    document.getElementById(arrStr2[28])[arrStr2[27]][arrStr2[26]] = arrStr2[34];
+    document.getElementById(arrStr2[28])[arrStr2[30]] = arrStr2[35];
+    document.getElementById(arrStr2[32])[arrStr2[27]][arrStr2[26]] = arrStr2[36];
+    document.getElementById(arrStr2[33])[arrStr2[30]] = arrStr2[20];
   }
 }
