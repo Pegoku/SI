@@ -39,43 +39,43 @@ var arrStr2 = [
 ];
 
 var arrStr = [
-83,
-126,
-116,
-114,
-120,
-86,
-92,
-106,
-107,
-110,
-1272,
-108,
-123,
-121,
-125,
-66,
-"value",
-"user",
-"getElementById",
-"pass",
-"",
-"split",
-"length",
-"charCodeAt",
-"placeholder",
-"fromCharCode",
-"color",
-"style",
-"check",
-"green",
-"innerHTML",
-"Ya casi está César",
-"test",
-"rest",
-"red",
-"No autorizado",
-"powderblue"
+83,                          //  0    
+126,                         //  1      
+116,                         //  2      
+114,                         //  3      
+120,                         //  4      
+86,                          //  5    
+92,                          //  6    
+106,                         //  7      
+107,                         //  8      
+110,                         //  9      
+1272,                        //  10      
+108,                         //  11      
+123,                         //  12      
+121,                         //  13      
+125,                         //  14      
+66,                          //  15    
+"value",                     //  16          
+"user",                      //  17        
+"getElementById",            //  18
+"pass",                      //  19   
+"",                          //  20
+"split",                     //  21    
+"length",                    //  22     
+"charCodeAt",                //  23         
+"placeholder",               //  24          
+"fromCharCode",              //  25           
+"color",                     //  26    
+"style",                     //  27    
+"check",                     //  28    
+"green",                     //  29    
+"innerHTML",                 //  30                              
+"Ya casi está César",        //  31                                       
+"test",                      //  32
+"rest",                      //  33
+"red",                       //  34
+"No autorizado",             //  35        
+"powderblue"                 //  36    
 ]
 
 function check() {
@@ -105,15 +105,15 @@ function check() {
     arrStr[15],
   ];
   var user = document.getElementById("user").value;
-  var passwd = document.getElementById(arrStr[19]).value;
+  var passwd = document.getElementById("pass").value;
   var passwdArr = passwd[arrStr[21]](arrStr[20]);
   var passwdCharSum = 0;
-  for (var i = 0; i < passwdArr[arrStr[22]]; i++) {
+  for (var i = 0; i < passwdArr.length; i++) {
     passwdCharSum += passwdArr[i][arrStr[23]]();
   }
   if (
-    passwdCharSum % document.getElementById("user")[arrStr[24]][arrStr[22]] ==
-      user[arrStr[22]] &&
+    passwdCharSum % document.getElementById("user").placeholder.length ==
+      user.length &&
     user == String[arrStr[25]](97, 100, 109, 105, 110)
   ) {
     document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[29];
@@ -122,73 +122,73 @@ function check() {
     document.getElementById(arrStr[33])[arrStr[30]] = String[arrStr[25]](
       arrSorted[0] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[1] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[2] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[3] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[4] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[5] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[6] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[7] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[8] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[9] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[10] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[11] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[12] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[13] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[14] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[15] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[16] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[17] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[18] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[19] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[20] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[21] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
       arrSorted[22] -
         (passwdCharSum %
-          document.getElementById("user")[arrStr[24]][arrStr[22]]),
+          document.getElementById("user").placeholder.length),
     );
   } else {
     document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[34];
