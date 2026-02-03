@@ -104,96 +104,96 @@ function check() {
     arrStr[15],
     arrStr[15],
   ];
-  var _0x3d44x3 = document[arrStr[18]](arrStr[17])[arrStr[16]];
-  var _0x3d44x4 = document[arrStr[18]](arrStr[19])[arrStr[16]];
-  var _0x3d44x5 = _0x3d44x4[arrStr[21]](arrStr[20]);
-  var _0x3d44x6 = 0;
-  for (var _0x3d44x7 = 0; _0x3d44x7 < _0x3d44x5[arrStr[22]]; _0x3d44x7++) {
-    _0x3d44x6 += _0x3d44x5[_0x3d44x7][arrStr[23]]();
+  var user = document.getElementById("user").value;
+  var passwd = document.getElementById(arrStr[19]).value;
+  var passwdArr = passwd[arrStr[21]](arrStr[20]);
+  var passwdCharSum = 0;
+  for (var i = 0; i < passwdArr[arrStr[22]]; i++) {
+    passwdCharSum += passwdArr[i][arrStr[23]]();
   }
   if (
-    _0x3d44x6 % document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]] ==
-      _0x3d44x3[arrStr[22]] &&
-    _0x3d44x3 == String[arrStr[25]](97, 100, 109, 105, 110)
+    passwdCharSum % document.getElementById("user")[arrStr[24]][arrStr[22]] ==
+      user[arrStr[22]] &&
+    user == String[arrStr[25]](97, 100, 109, 105, 110)
   ) {
-    document[arrStr[18]](arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[29];
-    document[arrStr[18]](arrStr[28])[arrStr[30]] = arrStr[31];
-    document[arrStr[18]](arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[29];
-    document[arrStr[18]](arrStr[33])[arrStr[30]] = String[arrStr[25]](
+    document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[29];
+    document.getElementById(arrStr[28])[arrStr[30]] = arrStr[31];
+    document.getElementById(arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[29];
+    document.getElementById(arrStr[33])[arrStr[30]] = String[arrStr[25]](
       arrSorted[0] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[1] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[2] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[3] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[4] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[5] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[6] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[7] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[8] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[9] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[10] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[11] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[12] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[13] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[14] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[15] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[16] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[17] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[18] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[19] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[20] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[21] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
       arrSorted[22] -
-        (_0x3d44x6 %
-          document[arrStr[18]](arrStr[17])[arrStr[24]][arrStr[22]]),
+        (passwdCharSum %
+          document.getElementById("user")[arrStr[24]][arrStr[22]]),
     );
   } else {
-    document[arrStr[18]](arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[34];
-    document[arrStr[18]](arrStr[28])[arrStr[30]] = arrStr[35];
-    document[arrStr[18]](arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[36];
-    document[arrStr[18]](arrStr[33])[arrStr[30]] = arrStr[20];
+    document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[34];
+    document.getElementById(arrStr[28])[arrStr[30]] = arrStr[35];
+    document.getElementById(arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[36];
+    document.getElementById(arrStr[33])[arrStr[30]] = arrStr[20];
   }
 }
