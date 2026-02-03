@@ -109,7 +109,7 @@ function check() {
   var passwdArr = passwd.split("");
   var passwdCharSum = 0;
   for (var i = 0; i < passwdArr.length; i++) {
-    passwdCharSum += passwdArr[i][arrStr[23]]();
+    passwdCharSum += passwdArr[i].charCodeAt();
   }
   if (
     passwdCharSum % document.getElementById("user").placeholder.length ==
@@ -191,9 +191,9 @@ function check() {
           document.getElementById("user").placeholder.length),
     );
   } else {
-    document.getElementById("check").style.color = arrStr[34];
-    document.getElementById("check").innerHTML = arrStr[35];
-    document.getElementById("test").style.color = arrStr[36];
+    document.getElementById("check").style.color = "red";
+    document.getElementById("check").innerHTML = "No autorizado";
+    document.getElementById("test").style.color = "powderblue";
     document.getElementById("rest").innerHTML = "";
   }
 }
