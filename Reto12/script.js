@@ -106,7 +106,7 @@ function check() {
   ];
   var user = document.getElementById("user").value;
   var passwd = document.getElementById("pass").value;
-  var passwdArr = passwd[arrStr[21]](arrStr[20]);
+  var passwdArr = passwd.split("");
   var passwdCharSum = 0;
   for (var i = 0; i < passwdArr.length; i++) {
     passwdCharSum += passwdArr[i][arrStr[23]]();
@@ -114,12 +114,12 @@ function check() {
   if (
     passwdCharSum % document.getElementById("user").placeholder.length ==
       user.length &&
-    user == String[arrStr[25]](97, 100, 109, 105, 110)
+    user == String.fromCharCode(97, 100, 109, 105, 110) // admin
   ) {
-    document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[29];
-    document.getElementById(arrStr[28])[arrStr[30]] = arrStr[31];
-    document.getElementById(arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[29];
-    document.getElementById(arrStr[33])[arrStr[30]] = String[arrStr[25]](
+    document.getElementById("check").style.color = arrStr[29];
+    document.getElementById("check").innerHTML = arrStr[31];
+    document.getElementById("test").style.color = arrStr[29];
+    document.getElementById("rest").innerHTML = String.fromCharCode(
       arrSorted[0] -
         (passwdCharSum %
           document.getElementById("user").placeholder.length),
@@ -191,9 +191,9 @@ function check() {
           document.getElementById("user").placeholder.length),
     );
   } else {
-    document.getElementById(arrStr[28])[arrStr[27]][arrStr[26]] = arrStr[34];
-    document.getElementById(arrStr[28])[arrStr[30]] = arrStr[35];
-    document.getElementById(arrStr[32])[arrStr[27]][arrStr[26]] = arrStr[36];
-    document.getElementById(arrStr[33])[arrStr[30]] = arrStr[20];
+    document.getElementById("check").style.color = arrStr[34];
+    document.getElementById("check").innerHTML = arrStr[35];
+    document.getElementById("test").style.color = arrStr[36];
+    document.getElementById("rest").innerHTML = "";
   }
 }
