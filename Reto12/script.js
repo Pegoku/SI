@@ -79,30 +79,30 @@ var arrStr = [
 ];
 
 function check() {
-  var arrSorted = [
-    arrStr[0],
-    arrStr[1],
-    arrStr[2],
-    arrStr[3],
-    arrStr[4],
-    arrStr[5],
-    arrStr[4],
-    arrStr[6],
-    arrStr[7],
-    arrStr[8],
-    arrStr[9],
-    arrStr[0],
-    arrStr[7],
-    arrStr[10],
-    arrStr[7],
-    arrStr[6],
-    arrStr[11],
-    arrStr[12],
-    arrStr[3],
-    arrStr[13],
-    arrStr[14],
-    arrStr[15],
-    arrStr[15],
+  var charValuesSorted = [
+    83,    // 0
+    126,    // 1
+    116,    // 2
+    114,    // 3
+    120,    // 4
+    86,    // 5
+    120,    // 6
+    92,    // 7
+    106,    // 8
+    107,    // 9
+    110,    // 10
+    83,    // 11
+    106,    // 12
+    1272,   // 13
+    106,    // 14
+    92,    // 15 
+    108,   // 16
+    123,   // 17
+    114,    // 18
+    121,   // 19
+    125,   // 20
+    66,   // 21
+    66,   // 22
   ];
   var user = document.getElementById("user").value;
   var passwd = document.getElementById("pass").value;
@@ -119,29 +119,29 @@ function check() {
     document.getElementById("check").innerHTML = "Ya casi está César";
     document.getElementById("test").style.color = "green";
     document.getElementById("rest").innerHTML = String.fromCharCode(
-      arrSorted[0] - (passwdCharSum % 7),
-      arrSorted[1] - (passwdCharSum % 7),
-      arrSorted[2] - (passwdCharSum % 7),
-      arrSorted[3] - (passwdCharSum % 7),
-      arrSorted[4] - (passwdCharSum % 7),
-      arrSorted[5] - (passwdCharSum % 7),
-      arrSorted[6] - (passwdCharSum % 7),
-      arrSorted[7] - (passwdCharSum % 7),
-      arrSorted[8] - (passwdCharSum % 7),
-      arrSorted[9] - (passwdCharSum % 7),
-      arrSorted[10] - (passwdCharSum % 7),
-      arrSorted[11] - (passwdCharSum % 7),
-      arrSorted[12] - (passwdCharSum % 7),
-      arrSorted[13] - (passwdCharSum % 7),
-      arrSorted[14] - (passwdCharSum % 7),
-      arrSorted[15] - (passwdCharSum % 7),
-      arrSorted[16] - (passwdCharSum % 7),
-      arrSorted[17] - (passwdCharSum % 7),
-      arrSorted[18] - (passwdCharSum % 7),
-      arrSorted[19] - (passwdCharSum % 7),
-      arrSorted[20] - (passwdCharSum % 7),
-      arrSorted[21] - (passwdCharSum % 7),
-      arrSorted[22] - (passwdCharSum % 7),
+      83 - (passwdCharSum % 7),
+      126 - (passwdCharSum % 7),
+      116 - (passwdCharSum % 7),
+      114 - (passwdCharSum % 7),
+      120 - (passwdCharSum % 7),
+      86 - (passwdCharSum % 7),
+      120 - (passwdCharSum % 7),
+      92 - (passwdCharSum % 7),
+      106 - (passwdCharSum % 7),
+      107 - (passwdCharSum % 7),
+      110 - (passwdCharSum % 7),
+      83 - (passwdCharSum % 7),
+      106 - (passwdCharSum % 7),
+      1272 - (passwdCharSum % 7),
+      106 - (passwdCharSum % 7),
+      92 - (passwdCharSum % 7),
+      108 - (passwdCharSum % 7),
+      123 - (passwdCharSum % 7),
+      114 - (passwdCharSum % 7),
+      121 - (passwdCharSum % 7),
+      125 - (passwdCharSum % 7),
+      66 - (passwdCharSum % 7),
+      66 - (passwdCharSum % 7),
     );
   } else {
     document.getElementById("check").style.color = "red";
