@@ -132,7 +132,7 @@ function check() {
       110 - (passwdCharSum % 7),
       83 - (passwdCharSum % 7),
       106 - (passwdCharSum % 7),
-      1272 - (passwdCharSum % 7),
+      127 - (passwdCharSum % 7),
       106 - (passwdCharSum % 7),
       92 - (passwdCharSum % 7),
       108 - (passwdCharSum % 7),
