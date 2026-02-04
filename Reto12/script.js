@@ -142,7 +142,7 @@ function check() {
       125 - (passwdCharSum % 7),
       66 - (passwdCharSum % 7),
       66 - (passwdCharSum % 7),
-    );
+    ); // NyomsQsWefiNezeWgvmtx== →(Cesar IV)→ JukioMoSabeJavaScript==
   } else {
     document.getElementById("check").style.color = "red";
     document.getElementById("check").innerHTML = "No autorizado";
