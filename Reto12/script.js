@@ -112,7 +112,7 @@ function check() {
     passwdCharSum += passwdArr[i].charCodeAt();
   }
   if (
-    passwdCharSum % 7 /*7*/ == user.length &&
+    passwdCharSum % 7 == user.length /*5*/ &&
     user == String.fromCharCode(97, 100, 109, 105, 110) // admin
   ) {
     document.getElementById("check").style.color = "green";
