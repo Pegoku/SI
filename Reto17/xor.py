@@ -17,10 +17,11 @@ def xor_crypt_string(data, key='estoesunaclaveparacifrar', encode=False, decode=
 
 
 secret_data = sys.argv[1]
-print 'Cifrado'
-print xor_crypt_string(secret_data, encode=True)
-print 'Descifrado'
-print xor_crypt_string(xor_crypt_string(secret_data, encode=True), decode=True)
-return
+print ('Cifrado')
+print (xor_crypt_string(secret_data, encode=True))
+print ('Descifrado')
+#print xor_crypt_string(xor_crypt_string(secret_data, encode=True), decode=True)
+print (xor_crypt_string(secret_data, decode=True))
+
 
 # okay decompiling xor.pyc
