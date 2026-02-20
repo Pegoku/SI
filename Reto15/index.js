@@ -1,6 +1,6 @@
 var valueArr = [
-  "Incorrect\x20password",
-  "OK\x20,\x20flag{password}",
+  "Incorrect password",
+  "OK , flag{password}",
   "1414812FnzZML",
   "2ZuZoOq",
   "720827WQlMog",
@@ -17,7 +17,7 @@ var valueArr = [
   "5eMgJYX",
 ];
 var _0x1f21 = function (_0x403766, _0x2892cb) {
-  _0x403766 = _0x403766 - 0x14a;
+  _0x403766 = _0x403766 - 330;
   var _0x2ad07f = valueArr[_0x403766];
   return _0x2ad07f;
 };
@@ -26,25 +26,25 @@ var _0x1f21 = function (_0x403766, _0x2892cb) {
   while (!![]) {
     try {
       var _0x20dbc3 =
-        parseInt(_0xe5fd8e(0x14e)) * parseInt(_0xe5fd8e(0x156)) +
-        -parseInt(_0xe5fd8e(0x153)) +
-        -parseInt(_0xe5fd8e(0x14c)) +
-        -parseInt(_0xe5fd8e(0x151)) +
-        parseInt(_0xe5fd8e(0x152)) * parseInt(_0xe5fd8e(0x158)) +
-        parseInt(_0xe5fd8e(0x157)) +
-        parseInt(_0xe5fd8e(0x14a));
+        parseInt(_0xe5fd8e(334)) * parseInt(_0xe5fd8e(342)) +
+        -parseInt(_0xe5fd8e(339)) +
+        -parseInt(_0xe5fd8e(332)) +
+        -parseInt(_0xe5fd8e(337)) +
+        parseInt(_0xe5fd8e(338)) * parseInt(_0xe5fd8e(344)) +
+        parseInt(_0xe5fd8e(343)) +
+        parseInt(_0xe5fd8e(330));
       if (_0x20dbc3 === _0x1e9b0f) break;
       else _0x1d7e2f["push"](_0x1d7e2f["shift"]());
     } catch (_0x192125) {
       _0x1d7e2f["push"](_0x1d7e2f["shift"]());
     }
   }
-})(valueArr, 0xd9531);
+})(valueArr, 891185);
 function verify() {
   var _0x33f5f4 = _0x1f21;
-  password = document[_0x33f5f4(0x159)](_0x33f5f4(0x154))[_0x33f5f4(0x14d)];
-  var _0x1ccb0d = _0x33f5f4(0x155);
-  password == _0x33f5f4(0x14b) + _0x1ccb0d
-    ? alert(_0x33f5f4(0x150))
-    : alert(_0x33f5f4(0x14f));
+  password = document[_0x33f5f4(345)](_0x33f5f4(340))[_0x33f5f4(333)];
+  var _0x1ccb0d = _0x33f5f4(341);
+  password == _0x33f5f4(331) + _0x1ccb0d
+    ? alert(_0x33f5f4(336))
+    : alert(_0x33f5f4(335));
 }
