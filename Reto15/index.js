@@ -16,23 +16,22 @@ var valueArr = [
   "value",
   "5eMgJYX",
 ];
-var _0x1f21 = function (_0x403766, _0x2892cb) {
-  _0x403766 = _0x403766 - 330;
-  var _0x2ad07f = valueArr[_0x403766];
-  return _0x2ad07f;
+var value1 = function (p1, unusedParam) {
+//   p1 -= 330;
+  var result = valueArr[p1];
+  return result;
 };
 (function (_0x1d7e2f, _0x1e9b0f) {
-  var _0xe5fd8e = _0x1f21;
   while (!![]) {
     try {
       var _0x20dbc3 =
-        parseInt(_0xe5fd8e(334)) * parseInt(_0xe5fd8e(342)) +
-        -parseInt(_0xe5fd8e(339)) +
-        -parseInt(_0xe5fd8e(332)) +
-        -parseInt(_0xe5fd8e(337)) +
-        parseInt(_0xe5fd8e(338)) * parseInt(_0xe5fd8e(344)) +
-        parseInt(_0xe5fd8e(343)) +
-        parseInt(_0xe5fd8e(330));
+        parseInt(value1(4)) * parseInt(value1(12)) +
+        -parseInt(value1(9)) +
+        -parseInt(value1(2)) +
+        -parseInt(value1(7)) +
+        parseInt(value1(8)) * parseInt(value1(14)) +
+        parseInt(value1(13)) +
+        parseInt(value1(0));
       if (_0x20dbc3 === _0x1e9b0f) break;
       else _0x1d7e2f["push"](_0x1d7e2f["shift"]());
     } catch (_0x192125) {
@@ -41,10 +40,9 @@ var _0x1f21 = function (_0x403766, _0x2892cb) {
   }
 })(valueArr, 891185);
 function verify() {
-  var _0x33f5f4 = _0x1f21;
-  password = document[_0x33f5f4(345)](_0x33f5f4(340))[_0x33f5f4(333)];
-  var _0x1ccb0d = _0x33f5f4(341);
-  password == _0x33f5f4(331) + _0x1ccb0d
-    ? alert(_0x33f5f4(336))
-    : alert(_0x33f5f4(335));
+  password = document[value1(15)](value1(10))[value1(3)];
+  var _0x1ccb0d = value1(11);
+  password == value1(1) + _0x1ccb0d
+    ? alert(value1(6))
+    : alert(value1(5));
 }
